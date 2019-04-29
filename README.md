@@ -28,7 +28,7 @@
 
 
 ### 2. SURF(Speeded Up Robust Features)
-- SURF同時具有尺度與旋轉的不變性，其算法主要利用了Hessian Matrix來提取圖中的特徵點，而在生成尺度空間中，SURF能讓圖像維持原本大小而只改變filter的尺度大小，用以提升運算速度與精確度。接著利用Non-maximum suppression來檢測出初步特徵點與特徵最強點，最後使用Harr小波特徵來得到特徵點的主方向。與SIFT相比，SURF能夠加快整體程式運行的時間。
+- SURF同時具有尺度與旋轉的不變性，其算法主要利用了Hessian Matrix來提取圖中的特徵點，而在生成尺度空間中，SURF能讓圖像維持原本大小而只改變filter的尺度大小，用以提升運算速度與精確度。接著利用Non-maximum suppression來檢測出初步特徵點與特徵最強點，最後使用Haar小波特徵來得到特徵點的主方向。與SIFT相比，SURF能夠加快整體程式運行的時間。
 
 - 配對結果如下圖
 ![](https://i.imgur.com/fyZpseW.jpg)
@@ -39,7 +39,7 @@
 以上的結果均為採用不同視角的照片進行配對。
 - 以計算速度來說，ORB最快，SURF次之，SIFT則是最慢。
 - 以我們實際match的成果來看，三種方法皆只列出40個match的話，ORB的match的線較為集中在某一區，而SIFT跟SURF則是比較分散。
-- SIFT與SURF的配對結果看起來較為相似，相較之下SURF的準確度稍高，線也較為整齊；而SIFT也有一定的準確度，但偶爾會有較大的歪斜配對線(如圖片一與圖片九)。
+- SIFT與SURF的配對結果看起來較為相似，相較之下SURF的準確度稍高，線也較為整齊；而SIFT也有一定的準確度，但偶爾會有較大的歪斜配對線(如第一列與最後一列)。
 
 ## Infinite zooming effect
 Infinite zooming的部分，由於alignment的結果到後面畫面會越來越扭曲，且在一次次的裁剪過後，照片畫質也會變得越來越差，因此我們並沒有使用alignment的結果來做zooming，而是用手動的方式去將照片接起來，再去做zooming。
