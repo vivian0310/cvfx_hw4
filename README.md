@@ -45,13 +45,15 @@
 Infinite zooming的部分，由於alignment的結果到後面畫面會越來越扭曲，且在一次次的裁剪過後，照片畫質也會變得越來越差，因此我們並沒有使用alignment的結果來做zooming，而是用手動的方式去將照片接起來，再去做zooming。
 
 - Infinite zooming成果如下：
-![](https://i.imgur.com/aXz0LDe.gif)
+
+![](https://github.com/vivian0310/cvfx_hw4/blob/master/before.gif)
 
 ## Image processing
 我們使用PhotoImpact修圖，主要利用「仿製-畫筆」的功能來去除照片邊框的部分，使邊界連接處看起來較為平順。
 
 - 修圖後的成果如下：
-![](https://i.imgur.com/DbKFxe1.gif)
+
+![](https://github.com/vivian0310/cvfx_hw4/blob/master/after.gif)
 
 #### Youtube URL
 https://youtu.be/tMiLPmWC4mc
