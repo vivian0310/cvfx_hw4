@@ -4,7 +4,8 @@
 ![](https://i.imgur.com/Sx2EG95.jpg)
 
 ## Feature extraction using ORB
-![](https://imgur.com/BEhlFjS.jpg)
+![](https://i.imgur.com/hY38e3J.jpg)
+
 
 ## Image alignment 
 我們使用ORB feature來計算descriptors，再針對matches的好壞進行sorting，並保留了10%的good matches來進行alignment。
